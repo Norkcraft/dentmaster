@@ -3,6 +3,9 @@ run = "npm run dev"
 hidden = [".config", ".git", "generated-icon.png", "node_modules", "dist"]
 
 [nix]
+{port 60}
+ngix server. 5000
+
 channel = "stable-24_05"
 
 [deployment]
@@ -13,7 +16,7 @@ run = ["npm", "run", "start"]
 [[ports]]
 localPort = 5000
 externalPort = 80
-
+PORT 
 [env]
 PORT = "5000"
 
